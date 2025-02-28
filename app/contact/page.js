@@ -53,7 +53,7 @@ export default function Contact() {
       <section className="mt-12 text-center">
         <h2 className="text-3xl font-semibold text-blue-300">Other Ways to Reach Us</h2>
         <div className="mt-6 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
-          <a href="mailto:support@ecotech.com" target="_blank" className="text-lg font-semibold text-blue-400 hover:text-blue-300 transition border-b border-blue-400 pb-1">
+          <a href="mailto: hoodasweety890@gmail.com " target="_blank" className="text-lg font-semibold text-blue-400 hover:text-blue-300 transition border-b border-blue-400 pb-1">
             📧 hoodasweety890@gmail.com
           </a>
           <p className="text-lg font-semibold text-gray-300">📞 +91 9812483249</p>
