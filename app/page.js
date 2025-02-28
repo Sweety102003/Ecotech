@@ -13,12 +13,16 @@ export default function Home() {
       <main className="p-12 text-center">
         <div className="flex flex-col md:flex-row items-center justify-center space-x-0 md:space-x-12 space-y-6 md:space-y-0">
          <div>
-          <h1 className="text-6xl font-bold text-blue-400">Masoaqua Innovations Private Limited</h1>
+         <h1 className="text-4xl sm:text-5xl md:text-5xl lg:text-6xl font-bold text-blue-400 text-center">
+  Masoaqua Innovations Private Limited
+</h1>
+
           <h1 className="text-2xl font-bold text-white-400 mt-2">"Transforming Waste into Innovation: Sustainable Solutions for a Greener Future"</h1>
           </div>
           <div className="p-2 rounded-xl">
           <Image src={photo} alt="EcoTech Hero" width={550} height={350} className="rounded-3xl " />
-        </div></div>
+        </div>
+        </div>
         <h2 className="text-3xl font-semibold mt-16 text-blue-300">Innovating for a Greener Tomorrow</h2>
         <p className="mt-4 text-lg text-gray-300">
           Explore our eco-friendly solutions: The Water Surface Garbage Cleaning Bot &
