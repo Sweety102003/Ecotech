@@ -4,7 +4,7 @@ import Link from "next/link";
 import Image from "next/image";
 import photo from "../images/photo.png";
 import photo2 from "../images/photo23.png"
-import photo1 from "../images/photo4.jpg"
+import photo1 from "../images/photo3.jpg"
 
 export default function Home() {
   return (
@@ -20,7 +20,7 @@ export default function Home() {
           <h1 className="text-2xl font-bold text-white-400 mt-2">"Transforming Waste into Innovation: Sustainable Solutions for a Greener Future"</h1>
           </div>
           <div className="p-2 rounded-xl">
-          <Image src={photo} alt="EcoTech Hero" width={550} height={350} className="rounded-3xl " />
+          <Image src={photo1} alt="EcoTech Hero" width={550} height={350} className="rounded-3xl  " />
         </div>
         </div>
         <h2 className="text-3xl font-semibold mt-16 text-blue-300">Innovating for a Greener Tomorrow</h2>

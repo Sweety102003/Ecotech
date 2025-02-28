@@ -8,18 +8,26 @@ import image6 from "../../images/manpreet.jpg";
 import image7 from "../../images/anisha.jpg";
 import image8 from "../../images/vishawajeet.jpg";
 import defaultImage from "../../images/photo4.jpg"; 
+import image9 from "../../images/kamlesh.jpg"
+import image11 from "../../images/arpit.jpg"
+import image10 from "../../images/saurav.jpg"
+
+
 
 export default function Team() {
   const directors = [
     { name: "Vishwajeet Singh", email: "vishwajeet.na@pwr.edu.pl", phone: "+91 9045065328", image: image8 },
-    { name: "Jane Smith", email: "jane@example.com", phone: "+1 234 567 8902" },
+
   ];
 
   const teamMembers = [
+    
+    { name: "Kamlesh Arya", email: "Kamlesh390180@gmail.com", phone: "+91 6395439767", image : image9 },
+    { name: "Saurabh Kumar", email: "Saurav1358@gmail.com", phone: "+91 9608880551", image : image10 },
     { name: "Sweety", email: "sweety@me.iitr.ac.in", phone: "+91 9812483249", image: image2 },
     { name: "Tushar Dahiya", email: "tushar_d@me.iitr.ac.in", phone: "+91 9166120945", image: image4 },
     { name: "Megha Choudhary", email: "megha_c@me.iitr.ac.in", phone: "+91 8955968554", image: image3 },
-    { name: "Arpit Kumar Meena", email: "arpit_km@me.iitr.ac.in", phone: "+91 9509754592" },
+    { name: "Arpit Kumar Meena", email: "arpit_km@me.iitr.ac.in", phone: "+91 9509754592", image: image11},
     { name: "Manpreet", email: "manpreet@me.iitr.ac.in", phone: "+91 8950237923", image: image6 },
     { name: "Pancholi Dishaben Hemantkumar", email: "dishapan25@gmail.com", phone: "+91 7862932531", image: image5 },
     { name: "Anisha Samantaray", email: "anisha_s@me.iitr.ac.in", phone: "+91 8302008119", image: image7 },
@@ -32,7 +40,7 @@ export default function Team() {
       </h1>
 
       <section className="bg-gray-800 p-6 sm:p-10 rounded-lg shadow-lg text-center mb-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-300 mb-8">Our Directors</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-300 mb-8">Our Director</h2>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
           {directors.map((director, index) => (
             <TeamMember key={index} {...director} isDirector />
