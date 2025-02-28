@@ -40,7 +40,7 @@ export default function Team() {
       </h1>
 
       <section className="bg-gray-800 p-6 sm:p-10 rounded-lg shadow-lg text-center mb-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-300 mb-8">Our Director</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-300 mb-8">Director</h2>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
           {directors.map((director, index) => (
             <TeamMember key={index} {...director} isDirector />
@@ -49,7 +49,7 @@ export default function Team() {
       </section>
 
       <section className="bg-gray-800 p-6 sm:p-10 rounded-lg shadow-lg text-center">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-400 mb-8">Our Team Members</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-400 mb-8"> Team Members</h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-8 justify-items-center">
           {teamMembers.map((member, index) => (
             <TeamMember key={index} {...member} />
