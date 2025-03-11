@@ -17,12 +17,13 @@ import image10 from "../../images/saurav.jpg"
 export default function Team() {
   const directors = [
     { name: "Vishwajeet Singh", email: "vishwajeet.na@pwr.edu.pl", phone: "+91 9045065328", image: image8 },
+    { name: "Kamlesh Arya", email: "Kamlesh390180@gmail.com", phone: "+91 6395439767", image : image9 },
 
   ];
 
   const teamMembers = [
     
-    { name: "Kamlesh Arya", email: "Kamlesh390180@gmail.com", phone: "+91 6395439767", image : image9 },
+   
     { name: "Saurabh Kumar", email: "Saurav1358@gmail.com", phone: "+91 9608880551", image : image10 },
     { name: "Sweety", email: "sweety@me.iitr.ac.in", phone: "+91 9812483249", image: image2 },
     { name: "Tushar Dahiya", email: "tushar_d@me.iitr.ac.in", phone: "+91 9166120945", image: image4 },
@@ -40,7 +41,7 @@ export default function Team() {
       </h1>
 
       <section className="bg-gray-800 p-6 sm:p-10 rounded-lg shadow-lg text-center mb-12">
-        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-300 mb-8">Director</h2>
+        <h2 className="text-2xl sm:text-3xl lg:text-4xl font-semibold text-blue-300 mb-8">Directors</h2>
         <div className="flex flex-col md:flex-row justify-center items-center space-y-8 md:space-y-0 md:space-x-8">
           {directors.map((director, index) => (
             <TeamMember key={index} {...director} isDirector />
