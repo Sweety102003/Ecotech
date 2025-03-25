@@ -19,41 +19,43 @@ export default function Contact() {
   useEffect(() => {
     if (resetForm) {
       setTimeout(() => {
-        setResetForm(false); 
-      }, 100); 
+        setResetForm(false);
+      }, 100);
     }
   }, [resetForm]);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-12 ">
-      <h1 className="text-5xl font-extrabold text-center text-blue-400 mb-8">Contact Us</h1>
+    <div className="min-h-screen bg-gray-900 text-white p-6 sm:p-8 md:p-12">
+      <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold text-center text-blue-400 mb-6 sm:mb-8">
+        Contact Us
+      </h1>
 
-      <section className="bg-gray-800 p-10 rounded-2xl shadow-lg max-w-3xl mx-auto">
-        <h2 className="text-3xl font-semibold text-blue-300 text-center">Get in Touch</h2>
-        <p className="text-gray-300 mt-4 text-center">
+      <section className="bg-gray-800 p-6 sm:p-8 md:p-10 rounded-2xl shadow-lg max-w-3xl mx-auto">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-blue-300 text-center">Get in Touch</h2>
+        <p className="text-gray-300 mt-2 sm:mt-4 text-center">
           We would love to hear from you! Fill out the form below, and we will get back to you as soon as possible.
         </p>
 
-        <div className="mt-6 flex justify-center">
-            {!resetForm && (
-              <iframe
-                ref={tallyRef}
-                src="https://tally.so/embed/n0D5L6?alignLeft=1&hideTitle=1&dynamicHeight=1"
-                width="100%"
-                loading="lazy"
-                height="450"
-                frameBorder="0"
-                className="rounded-lg"
-                allowFullScreen
-              ></iframe>
-            )}
-          </div>
+        <div className="mt-4 sm:mt-6 flex justify-center">
+          {!resetForm && (
+            <iframe
+              ref={tallyRef}
+              src="https://tally.so/embed/n0D5L6?alignLeft=1&hideTitle=1&dynamicHeight=1"
+              width="100%"
+              loading="lazy"
+              height="400"
+              frameBorder="0"
+              className="rounded-lg"
+              allowFullScreen
+            ></iframe>
+          )}
+        </div>
       </section>
 
-      <section className="mt-12 text-center">
-        <h2 className="text-3xl font-semibold text-blue-300">Other Ways to Reach Us</h2>
-        <div className="mt-6 flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-12">
-          <a href="mailto: hoodasweety890@gmail.com " target="_blank" className="text-lg font-semibold text-blue-400 hover:text-blue-300 transition border-b border-blue-400 pb-1">
+      <section className="mt-8 sm:mt-12 text-center">
+        <h2 className="text-2xl sm:text-3xl font-semibold text-blue-300">Other Ways to Reach Us</h2>
+        <div className="mt-4 sm:mt-6 flex flex-col sm:flex-row justify-center items-center space-y-4 sm:space-y-0 sm:space-x-6 md:space-x-12">
+          <a href="mailto: hoodasweety890@gmail.com" className="text-lg font-semibold text-blue-400 hover:text-blue-300 transition border-b border-blue-400 pb-1">
             📧 hoodasweety890@gmail.com
           </a>
           <p className="text-lg font-semibold text-gray-300">📞 +91 9812483249</p>
@@ -64,9 +66,9 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="mt-6 flex flex-col items-center">
+        <div className="mt-4 sm:mt-6 flex flex-col items-center">
           <iframe
-            className="w-full md:w-2/3 h-64 rounded-lg shadow-lg mt-4"
+            className="w-full sm:w-4/5 md:w-2/3 h-56 sm:h-64 rounded-lg shadow-lg"
             src="https://www.google.com/maps?q=MIED+Department,+IIT+Roorkee,+Uttarakhand,+India&output=embed"
             allowFullScreen
             loading="lazy"
