@@ -5,6 +5,7 @@ import Image from "next/image";
 import photo from "../images/photo.png";
 import photo2 from "../images/photo23.png"
 import photo1 from "../images/photo3.jpg"
+import Activity from "./activity/page";
 
 export default function Home() {
   return (
@@ -66,9 +67,12 @@ export default function Home() {
             </div>
           </div>
         </div>
-        <div className="mt-16">
+        
+        <Activity />
+        <div className="mt-10">
           <h2 className="text-3xl font-semibold text-blue-300">Contact Us</h2>
           <p className="mt-4 text-lg text-gray-300">Have questions? Reach out to us for more details about our products and services.</p>
+
           <a href="/contact" className="mt-6 inline-block bg-blue-500 text-white px-8 py-3 rounded-lg shadow-md hover:bg-blue-600 transition">Get in Touch</a>
         </div>
       </main>

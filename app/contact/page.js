@@ -25,7 +25,7 @@ export default function Contact() {
   }, [resetForm]);
 
   return (
-    <div className="min-h-screen bg-gray-900 text-white p-12">
+    <div className="min-h-screen bg-gray-900 text-white p-12 ">
       <h1 className="text-5xl font-extrabold text-center text-blue-400 mb-8">Contact Us</h1>
 
       <section className="bg-gray-800 p-10 rounded-2xl shadow-lg max-w-3xl mx-auto">
