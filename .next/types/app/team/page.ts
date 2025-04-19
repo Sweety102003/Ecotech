@@ -1,4 +1,4 @@
-// File: C:\Users\lenovo\Desktop\Project eco\ecotech-frontend\app\team\page.js
+// File: C:\Users\lenovo\Desktop\projects\Project eco\ecotech-frontend\app\team\page.js
 import * as entry from '../../../../app/team/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 

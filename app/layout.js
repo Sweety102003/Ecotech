@@ -22,7 +22,9 @@ export default function RootLayout({ children }) {
             {/* Desktop Navigation */}
             <nav className="hidden md:flex space-x-8">
               <Link href="/products" className="hover:text-gray-300 font-medium">Products</Link>
+
               <Link href="/team" className="hover:text-gray-300 font-medium">Team Members</Link>
+              <Link href="/projects" className="hover:text-gray-300 font-medium">Projects</Link>
               <Link href="/contact" className="hover:text-gray-300 font-medium">Contact Us</Link>
               <Link href="/login" className="hover:text-gray-300 font-medium">Login</Link>
             </nav>
@@ -40,8 +42,9 @@ export default function RootLayout({ children }) {
           <div className={`${menuOpen ? "block" : "hidden"} md:hidden bg-blue-800 p-4 absolute top-20 left-0 right-0 shadow-md`}>
             <nav className="flex flex-col space-y-4 text-center">
               <Link href="/products" className="hover:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>Products</Link>
-              <Link href="/team" className="hover:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>Team Members</Link>
-              <Link href="/contact" className="hover:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>Contact Us</Link>
+          <Link href="/team" className="hover:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>Team Members</Link>
+          <Link href="/projects" className="hover:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>Projects</Link>
+           <Link href="/contact" className="hover:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>Contact Us</Link>
               <Link href="/login" className="hover:text-gray-300 font-medium" onClick={() => setMenuOpen(false)}>Login</Link>
             </nav>
           </div>

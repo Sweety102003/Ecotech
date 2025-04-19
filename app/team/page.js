@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { Mail, Phone } from "lucide-react";
+import { Mail, Phone , Globe } from "lucide-react";
 import image2 from "../../images/photo4.jpg";
 import image3 from "../../images/megha.jpg";
 import image4 from "../../images/tushar.jpeg";
@@ -16,15 +16,16 @@ import image10 from "../../images/saurav.jpg"
 
 export default function Team() {
   const directors = [
-    { name: "Vishwajeet Singh", email: "vishwajeet.na@pwr.edu.pl", phone: "+91 9045065328", image: image8 },
+    { name: "Dr. Vishwajeet (Patron)", email: "vishwajeet.na@pwr.edu.pl", phone: "+91 9045065328", image: image8 },
     { name: "Kamlesh Arya", email: "Kamlesh390180@gmail.com", phone: "+91 6395439767", image : image9 },
+    { name: "Saurabh Kumar", email: "saurabh_k@hy.iitr.ac.in ", phone: "+91 9608880551", image : image10 ,  website: "https://sites.google.com/hy.iitr.ac.in/saurabh/home?authuser=0" },
 
   ];
 
   const teamMembers = [
     
    
-    { name: "Saurabh Kumar", email: "Saurav1358@gmail.com", phone: "+91 9608880551", image : image10 },
+   
     { name: "Sweety", email: "sweety@me.iitr.ac.in", phone: "+91 9812483249", image: image2 },
     { name: "Tushar Dahiya", email: "tushar_d@me.iitr.ac.in", phone: "+91 9166120945", image: image4 },
     { name: "Megha Choudhary", email: "megha_c@me.iitr.ac.in", phone: "+91 8955968554", image: image3 },
@@ -61,12 +62,12 @@ export default function Team() {
   );
 }
 
-function TeamMember({ name, email, phone, image, isDirector = false }) {
+function TeamMember({ name, email, phone, image, website, isDirector = false }) {
   return (
     <div
       className={`bg-gray-700 p-6 rounded-3xl shadow-md text-center w-full max-w-xs transform transition duration-300 hover:shadow-xl ${
         isDirector ? "hover:scale-105" : ""
-      }`}
+      } flex flex-col justify-between h-[400px]`}
     >
       <div className="w-52 h-52 mx-auto rounded-full overflow-hidden border-4 border-blue-500 shadow-lg hover:border-blue-300 transition duration-300">
         <Image
@@ -88,6 +89,18 @@ function TeamMember({ name, email, phone, image, isDirector = false }) {
         <Phone size={16} className="text-blue-400" />
         {phone}
       </p>
+      {isDirector && website && (
+        <p className="text-gray-300 flex items-center justify-center gap-2 mt-2">
+          <Globe size={16} className="text-blue-400" />
+          <a
+            href={website}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-teal-300 transition duration-300"
+          >
+            Website
+          </a>
+        </p>)}
     </div>
   );
 }
